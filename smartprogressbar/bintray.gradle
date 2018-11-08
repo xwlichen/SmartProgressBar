@@ -15,13 +15,15 @@ allprojects {
 }
 
 
-def siteUrl = 'https://github.com/JessYanCoding/AndroidAutoSize'   // 项目的主页
+def siteUrl = 'https://github.com/xwlichen/SmartProgressBar.git'   // 项目的主页
 
 publish {
-    userOrg = 'jessyancoding'      //bintray注册的用户名
-    groupId = 'me.jessyan'         //compile引用时的第1部分groupId
-    artifactId = 'autosize'     //compile引用时的第2部分项目名
+
+    userOrg = 'smartlibs'//bintray.com的组织名
+    repoName = 'maven'//组织下远程仓库名字,不指明，默认是上传到maven
+    groupId = 'com.smart.view'         //compile引用时的第1部分groupId
+    artifactId = 'progressbar'     //compile引用时的第2部分项目名（组织下的package名）
     publishVersion = rootProject.versionName    //compile引用时的第3部分版本号
-    desc = '一个极低成本的 Android 屏幕适配方案'
+    desc = ''
     website = siteUrl
 }
